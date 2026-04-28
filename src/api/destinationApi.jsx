@@ -9,7 +9,11 @@ export const destinationApi = createApi({
     // MUTATION -> POST, PUT, DELETE
 
     getAllDestinations: builder.query({
-      query: () => 'destination',
+      query: () => ({
+        url: 'destination',
+        method: 'GET',
+      }),
+      transformResponse: (res) => res.sort((a, b) => b.id - a.id),
       providesTags: ['Destinations'],
     }),
     // getAllDestinationsById: builder.query({

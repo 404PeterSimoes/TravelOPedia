@@ -4,19 +4,19 @@
       "id": "1",
       "city": "Lisboa",
       "country": "Portugal",
-      "daysNeeded": 5
+      "daysNeeded": 7
     },
     {
       "id": "2",
       "city": "Coruche",
       "country": "Portugal",
-      "daysNeeded": 4
+      "daysNeeded": 2
     },
     {
       "id": "3",
       "city": "Zurique",
       "country": "Suíça",
-      "daysNeeded": 1
+      "daysNeeded": 6
     }
   ]
 }
