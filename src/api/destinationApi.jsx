@@ -33,13 +33,13 @@ export const destinationApi = createApi({
       invalidatesTags: ['Destinations'],
     }),
     deleteDestination: builder.mutation({
-      query: (id) => ({
+      query: ({ id }) => ({
         url: `destination/${id}`,
         method: 'DELETE',
       }),
       // invalidatesTags: (result, error, id) => [{ type: 'Destination', id }],
+      invalidatesTags: ['Destinations'],
     }),
-    invalidatesTags: ['Destinations'],
   }),
 });
 

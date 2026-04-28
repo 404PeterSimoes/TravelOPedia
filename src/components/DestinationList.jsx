@@ -1,8 +1,13 @@
-import { useGetAllDestinationsQuery } from '../api/destinationApi';
+import {
+  useDeleteDestinationMutation,
+  useGetAllDestinationsQuery,
+} from '../api/destinationApi';
 
 function DestinationList() {
   const { data, isLoading, isSuccess, isError, error } =
     useGetAllDestinationsQuery();
+
+  const [deleteDestination] = useDeleteDestinationMutation();
 
   let content;
 
@@ -16,7 +21,12 @@ function DestinationList() {
         </div>
         <div className="col-2 text-info">{destination.daysNeeded} days</div>
         <div className="col-3">
-          <button className="btn form-control btn-danger">Delete</button>
+          <button
+            className="btn form-control btn-danger"
+            onClick={() => deleteDestination({ id: destination.id })}
+          >
+            Delete
+          </button>
         </div>
       </div>
     ));
