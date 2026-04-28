@@ -1,28 +1,22 @@
 {
   "destination": [
     {
-      "id": "2",
-      "city": "Abd",
-      "country": "Temp",
-      "daysNeeded": 8
-    },
-    {
-      "id": "4",
-      "city": "Abd",
-      "country": "Temp",
-      "daysNeeded": 8
-    },
-    {
-      "id": 67.2084701501533,
-      "city": "chicago",
-      "country": "wrg",
+      "id": "1",
+      "city": "Lisboa",
+      "country": "Portugal",
       "daysNeeded": 5
     },
     {
-      "id": 54.117067481114255,
-      "city": "as",
-      "country": "sa",
-      "daysNeeded": 7
+      "id": "2",
+      "city": "Coruche",
+      "country": "Portugal",
+      "daysNeeded": 4
+    },
+    {
+      "id": "3",
+      "city": "Zurique",
+      "country": "Suíça",
+      "daysNeeded": 1
     }
   ]
 }
