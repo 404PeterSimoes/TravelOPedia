@@ -1,14 +1,24 @@
 import { useState } from 'react';
+import { useAddDestinationMutation } from '../api/destinationApi';
 
 function AddDestination() {
   const [newCity, setNewCity] = useState('');
   const [newCountry, setNewCountry] = useState('');
+
+  const [addDestinationMutation, resultObj] = useAddDestinationMutation();
 
   const handleAddDestination = (formData) => {
     const city = formData.get('city');
     const country = formData.get('country');
 
     console.log(`City: ${city}, Country: ${country}`);
+
+    addDestinationMutation({
+      id: Math.random() * 100,
+      city: newCity,
+      country: newCountry,
+      daysNeeded: parseInt(Math.random() * 10) + 1,
+    });
 
     // Reset form fields
     setNewCity('');
