@@ -8,15 +8,9 @@
     },
     {
       "id": "2",
-      "city": "Coruche",
+      "city": "Abc",
       "country": "Portugal",
       "daysNeeded": 2
-    },
-    {
-      "id": "3",
-      "city": "Zurique",
-      "country": "Suíça",
-      "daysNeeded": 6
     }
   ]
 }
