@@ -10,6 +10,7 @@ export const randomDestinationApi = createApi({
 
     getRandomDestination: builder.query({
       query: () => ({
+        url: '',
         method: 'GET',
       }),
       transformResponse: (res) => {

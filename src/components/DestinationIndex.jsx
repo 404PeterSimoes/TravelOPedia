@@ -1,5 +1,6 @@
 import AddDestination from './AddDestination';
 import DestinationList from './DestinationList';
+import RandomDestination from './RandomDestination';
 
 function DestinationIndex() {
   return (
@@ -9,6 +10,8 @@ function DestinationIndex() {
       <br />
       <div className="text-center h3 text-warning">Destination List</div>
       <DestinationList />
+      <br />
+      <RandomDestination />
     </div>
   );
 }
